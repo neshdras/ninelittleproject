@@ -40,18 +40,16 @@ div{
 a{
     text-decoration: none;
     font-size: 60px;
-    cursor: context-menu;
-    &:hover img{
-        /* animation: hooover 0.5s forwards ; */
+    /* cursor: context-menu; */
+    /* &:hover img{
+        /* animation: hooover 0.5s forwards ; 
         cursor: context-menu;
-    }
-    &:hover i{
+    } */
+    /* &:hover i{
         /* animation: hooover 0.5s forwards ; */
-        cursor: context-menu;
-    }
-    &:hover ~ body{
-        display: none;
-    }
+        /* cursor: context-menu; 
+    } */
+
 }
 h1{
     justify-self: center;
