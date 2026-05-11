@@ -24,6 +24,9 @@
 a{
     text-decoration: none;
     color: black;
+    &:hover{
+        color: var(--green);
+    }
 }
 section{
     padding: 50px 0;
@@ -38,6 +41,10 @@ section{
     color: #fff;
     font-family: var(--menufont);
     border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: var(--ligthgray);
+    }
 }
 .title{
     font-size: 37px;
@@ -241,8 +248,10 @@ footer{
                 label{
                     padding-bottom: 10px;
                 }
+
                 input[type=checkbox]{
                     margin-right: 10px;
+                    cursor: pointer;
                 }
                 input[type=submit]{
                     width: fit-content;
@@ -250,6 +259,10 @@ footer{
                     font-family: 16px;
                     padding: 10px 24px;
                     margin-top: 16px;
+                    cursor: pointer;
+                    &:hover{
+                        color: var(--green);
+                    }
                 }
             }
         }
@@ -309,18 +322,18 @@ footer{
         }
     }
     #skill{
-        div{
+        div:nth-child(2){
             flex-wrap: wrap;
             article{
-                border-right: none;
+                border: none;
             }
         }
     }
     #client{
         article{
-            div{
+            div:nth-child(2){
                 grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
+                gap: 25px;
             }
         }
     }
@@ -331,10 +344,16 @@ footer{
     }
     #contact{
         article{
-            >div{
+            div:nth-child(2){
                 flex-wrap: wrap;
                 >div{
                     width: auto;
+                    p{
+                        padding: 30px 0;
+                    }
+                    ul{
+                        padding: 0;
+                    }
                 }
                 form{
                     width: auto;

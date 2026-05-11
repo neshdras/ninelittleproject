@@ -18,9 +18,17 @@
     --spanfont: "Roboto", sans-serif;
     --textfont:"Open Sans", sans-serif;
 }
+.return{
+    position: fixed;
+    z-index: 1;
+}
 a{
     text-decoration: none;
     color: #000;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: #e0b79e;
+    }
 }
 .title{
     font-family: var(--titlefont);
@@ -142,6 +150,11 @@ footer{
                     background-color: var(--black);
                     color: var(--white);
                     border-radius: 3px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        background-color: #e0b79e;
+                        color: var(--black);
+                    }
                 }
             }
             img{
@@ -178,6 +191,13 @@ footer{
                     color: var(--white);
                     border-radius: 3px;
                     font-family: var(--textfont);
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                        background-color: #e0b79e;
+                        color: var(--black);
+                    }
             }
         }
     }
