@@ -214,4 +214,14 @@ footer{
         flex-direction: column;
         gap: 10px;
     }
+    #index{
+        #product{
+            >div{
+                article{
+                    max-width: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
